@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* form start */
+.form{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: solid 1px rgb(255, 102, 0);
+    padding: 30px 20px;
+}
+.form h2{
+    text-align: center;
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+}
+.form .select_box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.form .select_box label{
+    cursor: pointer;
+    border: solid 1px rgb(255, 102, 0);
+    color: rgb(255, 102, 0);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 5px;
+}
+.form .select_box label:hover{
+    background-color: rgb(255, 102, 0, 0.3);
+}
+.form .select_box .checkbox{
+    display: none;
+}
+.form .select_box .fa-check{
+    display: none;
+}
+.form .select_box span{
+    margin-left: 10px;
+}
+.label_active{
+    background-color: rgb(255, 102, 0) !important;
+    color: white !important;
+}
+    /* Q1 */
+.form .select_box .Q1_checkbox{
+    width: 300px;
+}
+    /* Q2 */
+.form .select_box .Q2_checkbox{
+    min-width: 300px;
+    width: 45%;
+}
+/* submit */
+.submit{
+    width: 40%;
+    min-width: 300px;
+    display: block;
+    margin: 50px auto 0 auto;
+    background-color: white;
+    border: solid 2px rgb(255, 102, 0);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+    font-weight: bold;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgb(255, 102, 0);
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    .form h2{
+        font-size: 14px;
+    }
+    .form .select_box label{
+        font-size: 14px;
+    }
+    .submit{
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+/* form end */
